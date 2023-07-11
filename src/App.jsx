@@ -1,28 +1,35 @@
+import { Suspense, lazy } from "react";
+import "./App.css";
+import Loading from "./components/Loading";
 
-import './App.css'
-import Header from './components/Header'
-import MainBody from './components/MainBody'
-import SideBar from './components/SideBar'
+const SideBar = lazy(() => import("./components/SideBar"));
+const MainBody = lazy(() => import("./components/MainBody"));
+const Header = lazy(() => import("./components/Header"));
 
 function App() {
-
   return (
     <div className="flex h-full">
       <div className="w-1/6 bg-gray-200">
-        <SideBar />
+        <Suspense fallback={<Loading />}>
+          <SideBar />
+        </Suspense>
       </div>
 
       {/* Main Content */}
       <div className="w-5/6">
         <div className="bg-white">
-          <Header />
+          <Suspense fallback={<Loading />}>
+            <Header />
+          </Suspense>
         </div>
-        <div >
-          <MainBody />
+        <div>
+          <Suspense fallback={<Loading />}>
+            <MainBody />
+          </Suspense>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

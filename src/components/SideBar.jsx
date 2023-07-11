@@ -2,7 +2,6 @@ import { menuItems } from "../constants";
 
 const SideBar = () => {
 
-
     return (
         <div className="bg-gray-800 text-white h-full">
             <div className="p-4">

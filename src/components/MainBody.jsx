@@ -10,6 +10,7 @@ const MainBody = () => {
                         key={user?.id}
                         balance={user?.balance}
                         details={user?.details}
+                        background={user.background}
                     />
                 ))}
             </div>

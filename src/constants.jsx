@@ -1,7 +1,7 @@
 export const users = [
-    { id: 1, balance: '$1000', details: "Total Budget you own", },
-    { id: 2, balance: '$2500', details: "Spend month-to-date", },
-    { id: 3, balance: '$500', details: "Forecasted till month end", }
+    { id: 1, balance: '$1000', details: "Total Budget you own", background: "white" },
+    { id: 2, balance: '$2500', details: "Spend month-to-date", background: "blue-300" },
+    { id: 3, balance: '$500', details: "Forecasted till month end", background: "yellow-300" }
 ];
 
 export const data = [
