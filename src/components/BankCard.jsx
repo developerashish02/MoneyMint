@@ -1,6 +1,5 @@
 
 const BankCard = ({ balance, details }) => {
-    console.log(details, "Details")
     return (
         <div className="bg-white p-4 shadow-md rounded-md sm:w-64">
             <h2 className="text-2xl font-bold  mb-2 text-center"> {balance}</h2>

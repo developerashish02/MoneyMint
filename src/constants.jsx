@@ -22,3 +22,12 @@ export const data = [
     ]
 ];
 
+export const menuItems = [
+    { title: 'Home', icon: 'fa-solid fa-house' },
+    { title: 'Accounts', icon: 'fa-solid fa-credit-card' },
+    { title: 'Payments', icon: 'fa-solid fa-dollar-sign' },
+    { title: 'Transfers', icon: 'fa-solid fa-arrow-right' },
+    { title: 'Statements', icon: 'fa-solid fa-file-lines' },
+    { title: 'Settings', icon: 'fa-solid fa-gears' },
+];
+

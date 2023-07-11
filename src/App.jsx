@@ -7,14 +7,20 @@ import SideBar from './components/SideBar'
 function App() {
 
   return (
-    <div className=' h-screen'>
-      <div className="w-16 bg-gray-200">
+    <div className="flex h-full">
+      <div className="w-1/6 bg-gray-200">
         <SideBar />
       </div>
-      <div className="w-full bg-white">
-        <Header />
+
+      {/* Main Content */}
+      <div className="w-5/6">
+        <div className="bg-white">
+          <Header />
+        </div>
+        <div >
+          <MainBody />
+        </div>
       </div>
-      <MainBody />
     </div>
   )
 }
